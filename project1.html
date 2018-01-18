@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="project1.css" type="text/css" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <title>My Taskboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3">
+          <img class= "titleimg" src="title.png" />
+        </header>
+      </div>
+      <div class="paddingdiv"></div>
+      <div class="row">
+        <div class=" container col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 textdiv">
+          <div class="row">
+          <textarea class ="col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-6" rows="4" cols="30" id = "usrtxt" name="usrtxt" placeholder="enter note here..." style="margin-top: 15px; font-size: x-large;" ></textarea>
+        <form onsubmit = "return false">  <input class = "col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3" type="text" id = "usrdate" name="usrdate" placeholder="date (dd/mm/yy)" required pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$" style=" padding-left: 0px; margin-top: 23px; font-size: large; ">
+          <input class = "col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3" type="text" id = "usrtime" name="usrtime" placeholder="time (hh:mm)" required pattern="^[0-2][0-3]:[0-5][0-9]$" style=" padding-left: 0px; margin-top: 5px; font-size: large; ">
+          <input class = " col-sm-offset-1 col-sm-1 col-md-offset-1 col-md-1" type="submit" id = "save" value="save" style="margin-top: 35px;  "></input></form>
+        </div>
+        </div>
+      </div>
+      <div class="paddingdiv"></div>
+      <div class="row" id= "noterow">
+
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="project1.js" ></script>
+
+  </body>
+</html>

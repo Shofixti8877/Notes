@@ -1,0 +1,79 @@
+body{
+  background-image: url("tile.jpg");
+}
+.titleimg{
+  padding-top: 30px;
+  padding-left: 120px;
+}
+.textdiv{
+  background-image: url("formbg.jpg");
+  height: 165px;
+}
+.paddingdiv{
+height: 30px;
+
+}
+textarea{
+  background-color: transparent;
+  border-width: 0;
+
+
+}
+#usrdate{
+  background-color: transparent;
+  border-width: 0;
+
+}
+#usrtime{
+  background-color: transparent;
+  border-width: 0;
+
+}
+
+.notedivs{
+  float:left;
+  height: 250px;
+  width: 180px;
+  background-image: url("notebg.png");
+  padding-top: 30px;
+  padding-left: 10px;
+  margin-right: 20px;
+  animation: fadein 1s;
+}
+
+.notetxtdivs{
+  float:left;
+  font-family: 'Indie Flower', cursive;
+  width:80%;
+  height: 170px;
+  overflow-y:auto;
+  word-break: break-all;
+}
+
+.notedatedivs{
+font-family: 'Indie Flower', cursive;
+}
+
+.notetimedivs{
+font-family: 'Indie Flower', cursive;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+span{
+float: right;
+margin-right: 10px;
+opacity: 0;
+}
+
+.notedivs:hover span{
+  opacity: 1;
+}
